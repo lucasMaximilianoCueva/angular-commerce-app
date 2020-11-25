@@ -1,0 +1,62 @@
+
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: #303032;
+}
+
+.nav-links li a:hover {
+  color: #ffff00;
+}
+
+.nav-links-mac li a {
+  color: #303032;
+}
+
+.cart {
+  padding: 9px 25px;
+  background-color: rgb(244, 247, 73, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.cart:hover {
+  background-color: rgb(244, 247, 73, 0.8);
+}
+
+.active {
+  background-color: #ffff002f;
+  border-radius: 3px;
+}

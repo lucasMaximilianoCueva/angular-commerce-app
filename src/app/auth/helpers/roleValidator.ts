@@ -1,0 +1,15 @@
+import { User } from '../../models/user.interface';
+
+export class roleValidator {
+    isSuscriptor(user: User): boolean {
+        return user.role === 'SUSCRIPTOR';
+    }
+
+    isEditor(user: User): boolean {
+        return user.role === 'EDITOR';
+    }
+
+    isAdmin(user: User): boolean {
+        return user.role === 'ADMIN';
+    }
+}

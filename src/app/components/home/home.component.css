@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 4rem;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50rem;
+  padding: 6% 0 0 3%;
+}
+
+.banner {
+  width: 50rem;
+  height: 20rem;
+}
+
+.subscribe-button-container {
+  width: 50rem;
+  height: 20rem;
+}
+
+.h1-landing {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 7rem;
+  color: #39393b;
+}
+
+.btn-subscribe {
+    padding: 9px 25px;
+    background-color: rgba(255, 255, 0, 0);
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+.btn-subscribe:hover {
+    background-color: #ffc107;
+    border: 2px solid #ffc107;
+}

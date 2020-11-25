@@ -1,0 +1,25 @@
+<header>
+  <img class="logo" src="../assets/img/logo-01.png" alt="pear-logo" />
+  <nav>
+    <ul class="nav-links">
+      <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+      <li>
+        <a routerLink="products" routerLinkActive="active">Products</a>
+      </li>
+      <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+  </nav>
+  <div *ngIf="user$ | async as user; else login">
+  
+  <a routerLink="" routerLinkActive=""><button class="btn btn-warning" (click)="onLogout()" >Logout</button></a>
+  <a routerLink="" routerLinkActive=""><button class="btn btn-outline-secondary" > {{ user?.email }} </button></a>
+  
+</div>
+
+<ng-template #login>
+  <div>
+  <a routerLink="login" routerLinkActive=""><button class="btn btn-light" >Login</button></a>
+  <a routerLink="sign-up" routerLinkActive=""><button class="btn btn-warning" >Sign up</button></a> 
+</div>
+</ng-template>
+</header>
